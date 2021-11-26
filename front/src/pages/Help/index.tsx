@@ -1,7 +1,7 @@
 const Help = () => {
     return(
         <div>
-            Hello World!    
+              
         </div>
     )
 }
