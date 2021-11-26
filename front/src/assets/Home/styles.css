@@ -23,7 +23,7 @@ body {
   );
 }
 
-.App {
+.Home {
   padding-top: 40em;
   margin: auto;
   height: 490px;
@@ -32,7 +32,7 @@ body {
 
 
 /* titulo */
-.App-header{
+.Home-header{
   font-size: 210px;
   text-align: center;
   padding-bottom: 0.5em;
