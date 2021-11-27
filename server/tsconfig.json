@@ -12,6 +12,6 @@
       "noImplicitAny": true,
       "resolveJsonModule": true
     },
-    "include": ["src/**/*.ts"],
+    "include": ["src/**/*.ts", "../front/src/cycles.context.ts"],
     "exclude": ["node_modules"],
   }
