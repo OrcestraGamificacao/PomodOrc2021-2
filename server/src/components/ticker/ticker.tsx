@@ -1,49 +1,47 @@
+import React, {
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+  Dispatch,
+  SetStateAction } from 'react';
+import 'prop-types';
 
-import { BaseSyntheticEvent } from 'react';import React, {
-    useContext,
-    useEffect,
-    useRef,
-    useState,
-    Dispatch,
-    SetStateAction } from 'react';
-import { func } from 'prop-types';
+
 import cyclesContext from '../../contexts/cycles.context'; 
 import { 
     remainingTimeInMinutes,
     remainingTimeInSeconds } from '../../utils/support';
 import './ticker.style.css';
 
-const orderedCycles = useContext(cyclesContext);
-
-const [remainingTime, setRemainingTime] = useState(orderedCycles[0].duration);
-const [remainingMinutes, setRemainingMinutes] = useState<number | string>(0);
-const [remainingSeconds, setRemainingSeconds] = useState<number | string>(0);
-const [isTimeRunning, setIsTimeRunning] = useState(false);
-const [pomodoroCycles, setPomodoroCycles] = useState(0);
-const [gaugePercentual, setGaugePercentual] = useState(0);
-
-const stopClock = () => setIsTimeRunning(false);
-const playClock = () => setIsTimeRunning(true);
-const restartClock = () => {
-  updateCycleInformation(0);
-  stopClock();
-  setPomodoroCycles(0);
-};
-const updateCycleInformation = (pomodoroCycle: number) => {
-  setRemainingTime(orderedCycles[pomodoroCycle].duration);
-  setPomodoroCycleType(orderedCycles[pomodoroCycle].type);
-};
-
-const handleClick = () => {
-  setIsTimeRunning(!isTimeRunning);
+type TickerProps = {
+  setPomodOrcCycleType: Dispatch<SetStateAction<number>>,
 }
 
-React.useEffect(() => {
-  if (isTimeRunning) {
-    const interval = setInterval(() => {
-      setRemainingTime((prev) => {
-        if (prev === 0) return prev;
-        return prev - 1;
-      });
-    }, 1000);
+function Ticker({ setPomodOrcCycleType }: TickerProps): {
+  const orderedCycles = useContext(cyclesContext);
 
+  const [remainingTime, setRemainingTime] = useState(orderedCycles[0].duration);
+  const [remainingMin, setRemainingMin] = useState<number | string>(0);
+  const [remainingSecs, setRemainingSecs] = useState<number | string>(0);
+  const [isTimeRunning, setIsTimeRunning] = useState(false);
+  const [pomodOrcCycles, setPomodOrcCycles] = useState(0);
+  const [gaugePercentual, setGaugePercentual] = useState(0);
+
+  const stopTicker = () => setIsTimeRunning(false);
+  const playTicker = () => setIsTimeRunning(true);
+  const restartClock = () => {
+    updateCycleInformation(0);
+    stopTicker();
+    setPomodOrcCycles(0);
+  };
+
+  const updateCycleInformation = (pomodOrcCycle: number) => {
+    setRemainingTime(orderedCycles[pomodOrcCycle].duration);
+    setPomodOrcCycleType(orderedCycles[pomodOrcCycle].type);
+  };
+
+  const handleClick = () => {
+    setIsTimeRunning(!isTimeRunning);
+  }
+};

@@ -1,5 +1,5 @@
 export const clockTime = (time: number): string => {
-    return time.toString(10).length > 1 ? `${time}` : `0${time}`;
+    return time.toString(25).length > 1 ? `${time}` : `0${time}`;
   }
   
   export const remainingTimeInMinutes = (time: number): string => {
