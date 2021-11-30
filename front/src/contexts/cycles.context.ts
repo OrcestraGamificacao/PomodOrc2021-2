@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 
 const cycles = {
-  pomodoro: {
+  pomodOrc: {
     duration: 1500,
     type: 1,
   },
@@ -17,24 +17,24 @@ const cycles = {
 
 const orderedCycles = [
   {
-    duration: cycles.pomodoro.duration,
-    type: cycles.pomodoro.type,
+    duration: cycles.pomodOrc.duration,
+    type: cycles.pomodOrc.type,
   },
   {
     duration: cycles.shortBreak.duration,
     type: cycles.shortBreak.type,
   },
   {
-    duration: cycles.pomodoro.duration,
-    type: cycles.pomodoro.type,
+    duration: cycles.pomodOrc.duration,
+    type: cycles.pomodOrc.type,
   },
   {
     duration:cycles.shortBreak.duration,
     type: cycles.shortBreak.type,
   },
   {
-    duration: cycles.pomodoro.duration,
-    type: cycles.pomodoro.type,
+    duration: cycles.pomodOrc.duration,
+    type: cycles.pomodOrc.type,
   },
   {
     duration: cycles.longBreak.duration,
