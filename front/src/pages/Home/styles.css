@@ -4,15 +4,10 @@
 /*  fontes */
 @font-face {
     font-family: 'Tr2n';
-    src: url('fonts/Tr2n.ttf');
+    src: url('../../fonts/Tr2n.ttf');
   }/* HOME */
   
-  /*  fontes */
-  @font-face {
-    font-family: 'Tr2n';
-    src: url('../../fonts//Tr2n.ttf');
-  }
-  
+ 
   @font-face {
     font-family: 'Audiowide';
     src: url('../../fonts/Audiowide-Regular.ttf');
@@ -33,10 +28,12 @@
     margin: auto;
     height: 490px;
     width: 1220px;
+    text-align: center;
+
   }
   
   /* titulo */
-  .Home-header{
+  .Home-header {
     font-size: 210px;
     text-align: center;
     padding-bottom: 0.5em;
@@ -146,7 +143,7 @@
   
   
   /* titulo */
-  .Home-header{
+  .Home-header {
     font-size: 210px;
     text-align: center;
     padding-bottom: 0.5em;

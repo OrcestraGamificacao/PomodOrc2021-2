@@ -9,6 +9,7 @@ type TabsProps = {
 
 function Tabs({ activeItem }: TabsProps): JSX.Element {
   return (
+    
     <S.TabsWrapper>
       <S.Tabs positionOfActiveItem={activeItem}>
         <S.Tab>Pomodoro</S.Tab>

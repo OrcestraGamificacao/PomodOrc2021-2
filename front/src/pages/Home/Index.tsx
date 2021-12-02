@@ -9,7 +9,7 @@ function Home() {
         <text id="orc">ORC</text>
       </header>
       <div className="buttons">
-        <a href="#" id="init">Iniciar</a>
+        <a href="/iniciar" id="init">Iniciar</a>
         <div className="vl"></div>
         <a href="#" id="about">Sobre</a>
       </div>
