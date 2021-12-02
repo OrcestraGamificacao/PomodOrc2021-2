@@ -64,13 +64,12 @@ body {
   font-family: 'Audiowide';
 }
 
-/*  */
+/* ? */
 .todo-app {
   display: flex;
   flex-direction: column;
   justify-content: start;
   width: 520px;
-  min-height: 600px;
   background: var(--tertiary);
   text-align: center;
   margin: 128px auto;
@@ -84,23 +83,18 @@ h1 {
   color: var(--pinkAlt);
   font-size: 24px;
 }
-
 /* todo checked */
 .complete {
   text-decoration: line-through;
   opacity: 0.4;
 }
-
 .todo-form {
   margin-bottom: 32px;
 }
-
 .todo-input {
-
   box-shadow:
   0 0 7px var(--pink),
   0 0 151px var(--pink);
-
   padding: 14px 32px 14px 16px;
   border-radius: 20px 0 0 20px;
   border: 2px solid var(--red);
@@ -109,17 +103,13 @@ h1 {
   background: transparent;
   color: #fff;
 }
-
 .todo-input::placeholder {
   color: #e2e2e2;
 }
-
 .todo-button {
-
   box-shadow:
   0 0 7px var(--pink),
   0 0 151px var(--pink);
-
   padding: 16px;
   border: none;
   border-radius: 0 20px 20px 0;
@@ -129,24 +119,19 @@ h1 {
   color: #CECECE;
   text-transform: capitalize;
 }
-
 /* editando o todo */
 .todo-input.edit {
   border: 2px solid var(--pink);
 }
-
 .todo-button.edit {
   background: var(--pink);
   padding: 16px 22px;
 }
-
-
 .todo-container {
   display: flex;
   flex-direction: row;
   position: relative;
 }
-
 .todo-row {
   display: flex;
   justify-content: space-between;
@@ -160,13 +145,10 @@ h1 {
     var(--pinkAlt) 0%,
     var(--pink) 100%
   );
-
   padding: 16px;
   border-radius: 20px;
   width: 90%;
 }
-
-
 .todo-row:nth-child(2n + 1) {
   background: linear-gradient(
     90deg,
@@ -174,73 +156,61 @@ h1 {
     var(--purple) 100%
   );
 }
-
 .icons {
   display: flex;
   align-items: center;
   font-size: 24px;
   cursor: pointer;
 }
-
 .icons .subtodo-icon {
   display: flex;
   align-items: center;
   font-size: 24px;
   cursor: pointer;
 }
-
 .delete-icon {
   margin-right: 5px;
   color: var(--white);
 }
-
 .edit-icon {
   color: var(--white);
 }
-
 .subtodo-icon {
   color: var(--white);
 }
-
 /* botao voltar */
 .back-button-todo {
-  padding-top: 350px;
+  padding-top: 45px;
   margin: auto;
   margin-right: 33px;
   width: 77%;
   max-width: 1657px;
   text-align: right;
 }
-
 #backTodo {
   background: linear-gradient(
   #FE76FE 0%,
   #FF1250 100%
   );
-
   padding-top: 2%;
   padding-right: 10px;
   padding-left: 10px;
-
   font-family: 'Tr2n';
   text-decoration: none;
   color: #120459;
   font-size: 36px;
   transition-duration: 0.25s;
-
   border-top-left-radius: 250px;
   border-bottom-left-radius: 250px;
   border-top-right-radius: 250px;
   border-bottom-right-radius: 250px;
 }
-
 a#backTodo {
   height: 20px;
   align-items: center;
   justify-content: center;
   padding-top: 0.25em;
 }
-
 #backTodo:hover {
   color:#FE76FE;
   text-shadow:
@@ -255,4 +225,4 @@ a#backTodo {
     #FE76FE -30%,
     #FF1250 70%
     );
-}
+  }

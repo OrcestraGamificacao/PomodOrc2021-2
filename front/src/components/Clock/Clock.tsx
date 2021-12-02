@@ -12,7 +12,7 @@ import cyclesContext from 'contexts/cycles.context';
 import { 
   remainingTimeInMinutes, //Tempo restante em minutos
   remainingTimeInSeconds } from 'utils/helpers'; //Tempo restante em segundos
-import * as S from './Clock.style'; //TRazer o círculo do cronômetro e todo o seu style. 
+import * as S from './Clock.style'; //Trazer o círculo do cronômetro e todo o seu style. 
 
 type ClockProps = {
   setPomodOrcCycleType: Dispatch<SetStateAction<number>>, //Dispatch usado para assionar as mudanças de estado do estado inical do SetStateAction.

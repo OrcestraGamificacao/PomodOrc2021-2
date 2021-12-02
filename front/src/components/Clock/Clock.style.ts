@@ -8,7 +8,7 @@ export const ClockWrapper = styled.div`
 `;
 export const Frame = styled.div`
   background: ${({ theme }) => theme.colors.darkPurple};
-  background: linear-gradient(120deg, rgba(22,26,51,1) 40%, rgba(42,45,82,1) 100%);
+  background: linear-gradient(120deg, #5F097F 40%, #AC10E5 100%);
   border-radius: 100rem;
   box-shadow: 40px 40px 45px 7px #151834, -70px -90px 100px 1px #282c59, 5px 5px 15px 5px rgb(0 0 0 / 0%);
   display: inline-block;
@@ -18,7 +18,7 @@ export const Frame = styled.div`
 `;
 export const Inside = styled.div`
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.darkPurple};
+  background-color: #300440;
   border-radius: 100rem;
   display: flex;
   justify-content: center;

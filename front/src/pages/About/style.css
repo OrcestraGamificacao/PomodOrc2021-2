@@ -1,0 +1,262 @@
+/* About */
+
+/*  imporntando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@font-face {
+  font-family: 'Tr2n';
+  src: url('../../fonts/Tr2n.ttf');
+}
+@font-face {
+  font-family: 'Audiowide';
+  src: url('../../fonts/Audiowide-Regular.ttf');
+}
+
+/* logo */
+.Logo {
+  font-size: 98px;
+  display: flex;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.About #pomod, .About #orc {
+  font-family: 'Tr2n';
+  font-size: 25px;
+}
+
+.About #pomod {
+  color: #FE76FE;
+  text-shadow:
+    0 0 7px #FE76FE,
+    0 0 151px #FE76FE;
+}
+
+.About #orc {
+  color: #FF00A1;
+}
+
+.About #orc:hover {
+  text-shadow:
+    0 0 7px #FF00A1,
+    0 0 151px #FF00A1;
+}
+
+/* cor de fundo + tamanho geral */
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(18, 4, 88) 0%,
+    rgb(122, 4, 236) 100%
+  );
+}
+
+.About {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 90vh;
+  width: 90vw;
+}
+
+/* textos */
+@media only screen and (max-width: 1736px) {
+  main {
+    margin: auto;
+    width: 80%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+@media only screen and (min-width: 1736px) {
+  main {
+    text-align: justify;
+    text-justify: inter-word;
+    display: flex;
+    width: 80%;
+    max-width: 1657px;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .linhaVertical {
+    height: 300px;
+    width: 3px; /* Line width */
+    background-color: #7404ec; /* Line color */
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  #Proposta {
+    margin-right: 15px;
+  }
+  
+  #QuemSomos {
+    margin-left: 15px;
+  }
+}
+
+#QuemSomos, #Proposta {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* textos (Proposta/Quem Somos) */
+h1 {
+  font-family: 'Roboto';
+  font-size: 36px;
+  color: #FE76FE;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  color: #FE76FE;
+}
+
+/* fotos */
+#FotosGp {
+  margin: auto;
+  padding-top: 10px; padding-bottom: 10px;
+  width: 80%;
+  max-width: 1657px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:16px;
+  border-style: solid;
+  border-color:#FF00A1;
+  box-shadow: 0 0 7px #FF00A1,
+  0 0 10px #ff30ff,
+  0 0 21px #ff30ff;
+}
+
+picture {
+  font-family: 'Audiowide';
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#Maria, #Matheus, #Victorio, #Pedro {
+  position: relative;
+  height: 100%;
+  margin: auto;
+}
+
+#Maria:hover img, #Matheus:hover img, #Victorio:hover img, #Pedro:hover img{
+  opacity: 100%;
+}
+
+#Maria a, #Matheus a, #Victorio a, #Pedro a {
+  text-align: center;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  color: #FE76FE;
+  text-decoration: none;
+  background-color: #7404ec 10%;
+  font-size: 18px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0%;
+  z-index: 0;
+  box-shadow:
+  0 0 7px #120459,
+  0 0 10px #120459,
+  0 0 21px #120459;
+}
+
+#Maria:hover a, #Matheus:hover a, #Victorio:hover a, #Pedro:hover a {
+  opacity: 100%;
+  transition: .5s;
+}
+
+#name {
+  background-color: #120459;
+  box-shadow:
+  0 0 7px #120459;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* botao voltar */
+.back-button {
+  padding-top: 45px;
+  margin: auto;
+  width: 77%;
+  max-width: 1657px;
+  text-align: right;
+}
+
+#back {
+  background: linear-gradient(
+  #FE76FE 0%,
+  #FF1250 100%
+  );
+
+  padding-top: 2%;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  font-family: 'Tr2n';
+  text-decoration: none;
+  color: #120459;
+  font-size: 36px;
+  transition-duration: 0.25s;
+
+  border-top-left-radius: 250px;
+  border-bottom-left-radius: 250px;
+  border-top-right-radius: 250px;
+  border-bottom-right-radius: 250px;
+}
+
+a#back {
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.25em;
+}
+
+#back:hover {
+  color:#FE76FE;
+  text-shadow:
+    0 0 7px #ff30ff,
+    0 0 10px #FE76FE,
+    0 0 21px #FE76FE,
+    0 0 42px #FE76FE,
+    0 0 82px #FE76FE,
+    0 0 92px #FE76FE,
+    0 0 102px #FE76FE;
+  background: linear-gradient(
+    #FE76FE -30%,
+    #FF1250 70%
+    );
+}
+
+
