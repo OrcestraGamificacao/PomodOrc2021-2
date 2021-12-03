@@ -6,6 +6,7 @@ import { Dispatch, SetStateAction, useState } from "react"
 import Tabs from "../src/components/Tabs/Tabs"
 import Title from "../src/pages/Ticker/tittle"
 import Todo from "../src/pages/ToDoList/index"
+// import * as Sub from "../src/components/Tasks/index"
 
 export const Router = () => {
         return(
@@ -15,7 +16,7 @@ export const Router = () => {
                 <Route path="/iniciar" element={<Title></Title>} ></Route>
                 <Route path="/" element={<Home/>} />
                 <Route path="/About" element={<About/>} />
-
+                {/* <Route path="/Sub" element ={<Sub/>} ></Route> */}
             </Routes>
             <Routes>
 
