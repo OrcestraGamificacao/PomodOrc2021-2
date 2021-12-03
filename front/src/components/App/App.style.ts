@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 export const MainTitle = styled.h1`
+
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+
   #Orc {
     font-family: 'Tr2n';
     color: #FF00A1;

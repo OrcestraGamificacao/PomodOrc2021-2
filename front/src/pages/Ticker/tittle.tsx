@@ -10,6 +10,7 @@ function Title(): JSX.Element {
   return (
     <S.Container>
       <S.MainTitle>
+        
         <a href="/">
           <text id="Pomod">Pomod</text><text id="Orc">Orc</text>
         </a>

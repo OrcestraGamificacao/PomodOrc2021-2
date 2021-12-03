@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 import NotesList from '../SubUtils/NoteList';
 import Search from '../SubUtils/Search';
@@ -77,6 +77,9 @@ const App = () => {
 					handleAddNote={addNote}
 					handleDeleteNote={deleteNote}
 				/>
+				<a href="/" className="init">
+          			<text>Voltar</text>
+        		</a>
 			</div>
 		</div>
 	);

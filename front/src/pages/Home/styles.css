@@ -113,3 +113,18 @@ body {
   border-left: 1px solid #120459;
   height: 20%;
 }
+
+.abababab {
+
+  align-content: center;
+  border-radius: 20px;
+  font-size: 3.5vh;
+  z-index: 2;
+
+  width: 10vw;
+  height: 10vh;
+
+  background-color: #120459;
+  position: absolute;
+  position: fixed;
+}
