@@ -40,7 +40,7 @@ function TodoList() {
   }
 
   return (
-    <div>
+    <div className="task-title">
       <h1>Tarefas do Dia</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo

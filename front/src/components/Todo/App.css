@@ -78,16 +78,18 @@ body {
 }
 
 /* titulo */
-h1 {
+.task-title h1 {
   margin: 32px 0;
   color: var(--pinkAlt);
   font-size: 24px;
 }
+
 /* todo checked */
 .complete {
   text-decoration: line-through;
   opacity: 0.4;
 }
+
 .todo-form {
   margin-bottom: 32px;
 }

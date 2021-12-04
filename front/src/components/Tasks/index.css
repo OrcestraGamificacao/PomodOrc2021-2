@@ -5,11 +5,6 @@ body {
 	background: linear-gradient(90deg, rgb(18, 4, 88) 0%, rgb(122, 4, 236) 100%);
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas,
-		'Courier New', monospace;
-}
-
 .header {
 	display: flex;
 	align-items: center;

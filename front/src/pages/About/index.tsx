@@ -14,10 +14,10 @@ function About() {
       </a>
       <main>
         <span id="Proposta">
-          <div>
+          <div className="title">
             <h1>Proposta</h1>
           </div>
-          <div>
+          <div className="texts">
             <p> O nosso projeto consiste em um
               organizador de tarefas baseado na Técnica
               Pomodoro, que constitui-se na divisão de tempo
@@ -27,10 +27,10 @@ function About() {
         </span>
         <div className="linhaVertical"></div>
         <span id="QuemSomos">
-          <div>
+          <div className="title">
             <h1>Quem Somos</h1>
           </div>
-          <div>
+          <div className="texts">
             <p>A nossa equipe
             é composta por quatro membros,
             todos trainees da empresa júnior Orc'estra

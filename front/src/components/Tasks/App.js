@@ -77,7 +77,7 @@ const App = () => {
 					handleAddNote={addNote}
 					handleDeleteNote={deleteNote}
 				/>
-				<a href="/" className="init">
+				<a href="/Lista" className="back-buttonSub">
           			<text>Voltar</text>
         		</a>
 			</div>

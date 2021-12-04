@@ -4,7 +4,7 @@ import About from "../src/pages/About"
 import Clock from "../src/components/Clock/Clock"
 import { Dispatch, SetStateAction, useState } from "react"
 import Tabs from "../src/components/Tabs/Tabs"
-import Title from "../src/pages/Ticker/tittle"
+import Title from "../src/pages/Ticker/title"
 import Todo from "../src/pages/ToDoList/index"
 import Sub from "../src/pages/SubTasks/Sub"
 
