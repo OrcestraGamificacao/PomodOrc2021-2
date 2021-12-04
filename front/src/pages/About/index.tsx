@@ -18,23 +18,26 @@ function About() {
             <h1>Proposta</h1>
           </div>
           <div className="texts">
-            <p> O nosso projeto consiste em um
-              organizador de tarefas baseado na Técnica
-              Pomodoro, que constitui-se na divisão de tempo
-              dedicado a tarefas a fim de melhorar a produtividade.
+            <p> O nosso projeto consiste em um <strong>organizador de tarefas</strong> baseado na <strong>Técnica
+              Pomodoro</strong>, que constitui-se na divisão de tempo
+              dedicado a tarefas a fim de melhorar a <strong>produtividade</strong>.
             </p>
           </div>
         </span>
         <div className="linhaVertical"></div>
         <span id="QuemSomos">
           <div className="title">
-            <h1>Quem Somos</h1>
+            <h1>Equipe</h1>
           </div>
           <div className="texts">
-            <p>A nossa equipe
-            é composta por quatro membros,
-            todos trainees da empresa júnior Orc'estra
-            Gamificação.
+            <p>A nossa equipe é composta por 
+              <strong>quatro membros</strong>, 
+              todos <strong>trainees</strong> 
+              da <strong>Orc'estra Gamificação</strong>, 
+              uma <strong>empresa júnior</strong> 
+              formada e gerida por alunos da 
+              <strong>Faculdade do Gama</strong>, 
+              da <strong>Universidade de Brasília</strong>.
             </p>
           </div>
         </span>
