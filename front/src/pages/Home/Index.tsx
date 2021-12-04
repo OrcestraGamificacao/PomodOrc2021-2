@@ -15,6 +15,11 @@ function Home() {
           <a href="/sobre" id="about-page">Sobre</a>
         </div>
       </div>
+
+      <footer className="footer">
+        ©CyberOrc
+      </footer>
+
     </div>
   );
 }

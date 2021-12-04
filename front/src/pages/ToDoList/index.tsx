@@ -18,7 +18,9 @@ function Lista() {
             <div className="back-button-todo">
                 <a href="/" id="backTodo">VOLTAR</a>
             </div>
-
+            <footer className="footer">
+              ©CyberOrc
+            </footer>
         </div>
     </div>
   );

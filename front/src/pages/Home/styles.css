@@ -128,3 +128,15 @@ body {
   position: absolute;
   position: fixed;
 }
+
+.footer {
+  opacity: 20%;
+  position: fixed;
+  font-size: 2vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.5vh;
+  color: white;
+  text-align: center;
+}

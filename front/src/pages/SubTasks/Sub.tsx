@@ -6,6 +6,9 @@ function Sub() {
   return ( 
     <div className="Sub">
         <App/>
+        <footer className="footer">
+          ©CyberOrc
+        </footer>
     </div>
   );
 }

@@ -24,7 +24,9 @@ function Title(): JSX.Element {
           <text>Voltar</text>
         </a>
       </S.GoBack>
-         
+      <footer className="footer">
+        ©CyberOrc
+      </footer>     
     </S.Container>
   );
 }
