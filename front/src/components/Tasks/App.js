@@ -77,9 +77,11 @@ const App = () => {
 					handleAddNote={addNote}
 					handleDeleteNote={deleteNote}
 				/>
-				<a href="/Lista" className="back-buttonSub">
-          			<text>Voltar</text>
-        		</a>
+				<div className="back-buttonSub">
+					<a href="/todo" className="back-buttonSub">
+						<text>Voltar</text>
+					</a>
+				</div>
 			</div>
 		</div>
 	);

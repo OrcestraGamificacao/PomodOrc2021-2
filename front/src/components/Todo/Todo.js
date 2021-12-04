@@ -57,7 +57,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
             onClick={() => setEdit({ id: todo.id, value: todo.text })}
             className="edit-icon"
           />
-          <a href="/Sub" class="GFG">
+          <a href="/subtasks" class="GFG">
             <TiPlus
               className="subtodo-icon"
             />

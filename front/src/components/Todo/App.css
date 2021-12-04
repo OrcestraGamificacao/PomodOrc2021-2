@@ -69,7 +69,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 520px;
+  width: 100vw;
+  max-width: 520px;
   background: var(--tertiary);
   text-align: center;
   margin: 128px auto;
@@ -93,6 +94,7 @@ body {
 .todo-form {
   margin-bottom: 32px;
 }
+
 .todo-input {
   box-shadow:
   0 0 7px var(--pink),
@@ -101,13 +103,16 @@ body {
   border-radius: 20px 0 0 20px;
   border: 2px solid var(--red);
   outline: none;
-  width: 320px;
+  width: 50vw;
+  max-width: 320px;
   background: transparent;
   color: #fff;
 }
+
 .todo-input::placeholder {
   color: #e2e2e2;
 }
+
 .todo-button {
   box-shadow:
   0 0 7px var(--pink),
@@ -207,12 +212,14 @@ body {
   border-top-right-radius: 250px;
   border-bottom-right-radius: 250px;
 }
+
 a#backTodo {
   height: 20px;
   align-items: center;
   justify-content: center;
   padding-top: 0.25em;
 }
+
 #backTodo:hover {
   color:#FE76FE;
   text-shadow:
