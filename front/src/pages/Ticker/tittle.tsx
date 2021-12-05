@@ -3,7 +3,6 @@ import Tabs from 'components/Tabs/Tabs';
 import Clock from 'components/Clock/Clock';
 import * as S from '../../components/App/App.style';
 
-
 function Title(): JSX.Element {
 
   const [pomodoroCycleType, setPomodoroCycleType] = useState<number>(1);
@@ -14,6 +13,7 @@ function Title(): JSX.Element {
           <text id="Pomod">Pomod</text><text id="Orc">Orc</text>
         </a>
       </S.MainTitle>
+      <h1>Mdn dono</h1>
       <Tabs activeItem={pomodoroCycleType} />
       <Clock 
         setPomodOrcCycleType={setPomodoroCycleType}

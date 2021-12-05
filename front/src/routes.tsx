@@ -12,18 +12,16 @@ export const Router = () => {
         <BrowserRouter>
             <Routes>
                 
-                <Route path="/iniciar" element={<Title></Title>} ></Route>
+                <Route path="/relogio/:nome" element={<Title/>} />
                 <Route path="/" element={<Home/>} />
-                <Route path="/About" element={<About/>} />
+                <Route path="/about" element={<About/>} />
 
             </Routes>
             <Routes>
 
-                <Route path="/Lista" element={<Todo></Todo>} ></Route>
+                <Route path="/lista" element={<Todo/>} />
                         
-            </Routes>
-
-                    
+            </Routes>  
         </BrowserRouter>
     );
 }
