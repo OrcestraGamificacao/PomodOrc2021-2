@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react'
 import TodoForm from './TodoForm'
 import Todo from './Todo'
 import axios from 'axios'
+import {BASE_API_URL} from "../../config/app_config"
 
 function TodoList() {
 
   const [todos, setTodos] = useState([])
 
   useEffect(() => {
-    axios.get('https://api-crud-todo-orc.herokuapp.com/')
+    axios.get(BASE_API_URL)
       .then(function (response) {
         // handle success
         console.log(response);
@@ -21,6 +22,7 @@ function TodoList() {
       .then(function () {
         // always executed
       });
+
   }, [])
 
   const addTodo = todo => {
@@ -28,7 +30,7 @@ function TodoList() {
       return
     }
 
-    axios.post('https://api-crud-todo-orc.herokuapp.com/', {
+    axios.post(BASE_API_URL, {
       nome: todo.text
     }).then(function (response) {
       // handle success
@@ -55,13 +57,10 @@ function TodoList() {
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
       return
     }
-
-    axios.put(`https://api-crud-todo-orc.herokuapp.com/${todoId}`)
+    axios.put(`${BASE_API_URL}/${todoId}`, {nome : newValue.text})
       .then(function (response) {
-        // handle success
-        console.log(response);
-        setTodos(prev => prev.map(item => (item._id === todoId ? response.data[0].nome : item)))
-        // setTodos(response.data)
+        // setTodos(prev => prev.map(item => (item._id === todoId ? newValue.text : item)))
+        window.location.reload();
       })
       .catch(function (error) {
         // handle error
@@ -75,7 +74,7 @@ function TodoList() {
 
   const removeTodo = id => {
 
-    axios.delete(`https://api-crud-todo-orc.herokuapp.com/${id}`)
+    axios.delete(`${BASE_API_URL}/${id}`)
       .then(function (response) {
         // handle success
         console.log(response);
@@ -95,7 +94,7 @@ function TodoList() {
 
   const completeTodo = (id, isCompleteParam) => {
     console.log(id, isCompleteParam);
-    axios.put(`https://api-crud-todo-orc.herokuapp.com/iscomplete/${id}`, {isComplete : !isCompleteParam})
+    axios.put(`${BASE_API_URL}/iscomplete/${id}`, {isComplete : !isCompleteParam})
       .then(function (response) {
         // handle success
         console.log(response);
@@ -119,7 +118,7 @@ function TodoList() {
   }
 
   return (
-    <div>
+    <div className="task-title">
       <h1>Tarefas do Dia</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo

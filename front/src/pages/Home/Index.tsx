@@ -10,11 +10,16 @@ function Home() {
           <text id="orc">ORC</text>
         </header>
         <div className="buttons">
-          <a href="/Lista" id="init">Iniciar</a>
+          <a href="/todo" id="init">Iniciar</a>
           <div className="vl"></div>
-          <a href="/About" id="about-page">Sobre</a>
+          <a href="/sobre" id="about-page">Sobre</a>
         </div>
       </div>
+
+      <footer className="footer">
+        ©CyberOrc
+      </footer>
+
     </div>
   );
 }

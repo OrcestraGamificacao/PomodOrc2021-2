@@ -44,15 +44,6 @@
     0 0 151px #FF00A1;
 }
 
-/* cor de fundo + tamanho geral */
-body {
-  background: linear-gradient(
-    90deg,
-    rgb(18, 4, 88) 0%,
-    rgb(122, 4, 236) 100%
-  );
-}
-
 .About {
   position: absolute;
   top: 50%;
@@ -108,7 +99,7 @@ body {
 }
 
 /* textos (Proposta/Quem Somos) */
-h1 {
+.title h1 {
   font-family: 'Roboto';
   font-size: 36px;
   color: #FE76FE;
@@ -116,11 +107,12 @@ h1 {
   margin-bottom: 5px;
 }
 
-p {
+.texts p {
   margin-top: 5px;
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
   color: #FE76FE;
+  padding-bottom: 50px;
 }
 
 /* fotos */
@@ -140,7 +132,7 @@ p {
   0 0 21px #ff30ff;
 }
 
-picture {
+#FotosGp picture {
   font-family: 'Audiowide';
   display: flex;
   flex-wrap: wrap;
